@@ -1,0 +1,72 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #444;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav button {
+    background: #777;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+nav button:hover {
+    background: #555;
+}
+
+/* Secciones */
+.seccion {
+    display: none;
+    padding: 80px 20px;
+}
+.seccion.activa {
+    display: block;
+}
+
+/* Contenedores */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caja {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+#formacion .caja, 
+#situacion .caja {
+    width: 50%; /* Ajusta el tamaño de la caja */
+    margin: 0 auto; /* Centra la caja */
+    text-align: center; /* Asegura que el texto también esté centrado */
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    max-height: 300px; /* Limita la altura */
+    object-fit: cover; /* Ajusta el contenido */
+}
+

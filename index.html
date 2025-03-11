@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('infoPersonal')">Información Personal</button>
+        <button onclick="mostrarSeccion('formacion')">Formación Académica</button>
+        <button onclick="mostrarSeccion('situacion')">Situación Laboral</button>
+        <button onclick="mostrarSeccion('actividades')">Actividades Extraescolares</button>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="seccion activa">
+        <h1>Página Personal</h1>
+        <p>Descripción: Esta es mi página personal donde daré información sobre mí.</p>
+        <img src="img/zedrik.jpeg" alt="Imagen de inicio">
+    </section>
+
+    <!-- Sección Información Personal -->
+    <section id="infoPersonal" class="seccion">
+        <h1>Información Personal</h1>
+        <div class="contenedor">
+            <div class="caja">
+                <h2>Datos Generales</h2>
+                <p><strong>Nombre:</strong> Zedrik Cazares</p>
+                <p><strong>Estado Civil:</strong> Soltero</p>
+                <p><strong>Nacionalidad:</strong> Mexicana</p>
+                <p><strong>Edad:</strong> 20</p>
+                <p><strong>Nacimiento:</strong> 5 de marzo de 2004</p>
+                <p><strong>Ciudad Natal:</strong> Los Mochis</p>
+            </div>
+            <div class="caja">
+                <h2>Datos de Contacto</h2>
+                <p><strong>Correo:</strong> zedrik@gmail.com</p>
+                <p><strong>Teléfono:</strong> 6682050997</p>
+                <p><strong>Dirección:</strong> Avenida UAS, Fraccionamiento Versus</p>
+            </div>
+        </div>
+        <img src="img/personal.png" alt="Imagen de información personal">
+    </section>
+
+    <!-- Sección Formación Académica -->
+    <section id="formacion" class="seccion">
+        <h1>Formación Académica</h1>
+        <div class="caja">
+            <p><strong>Kínder, Primaria, Secundaria y Preparatoria:</strong> Instituto Académico del Colegio Mochis</p>
+            <p><strong>Universidad:</strong> Facultad de Ingeniería, Universidad Autónoma de Sinaloa</p>
+        </div>
+        <img src="img/formacion.png" alt="Imagen de formación académica">
+    </section>
+
+    <!-- Sección Situación Laboral -->
+    <section id="situacion" class="seccion">
+        <h1>Situación Laboral</h1>
+        <div class="caja">
+            <p><strong>Estado actual y anterior laboral:</strong> NULO</p>
+        </div>
+        <img src="img/laboral.png" alt="Imagen de situación laboral">
+    </section>
+
+    <!-- Sección Actividades Extraescolares -->
+    <section id="actividades" class="seccion">
+        <h1>Actividades Extraescolares</h1>
+        <div class="contenedor">
+            <div class="caja">
+                <h2>Culturales</h2>
+                <ul>
+                    <li>Cursos de inglés</li>
+                    <li>Campamento de verano</li>
+                    <li>Curso de baile</li>
+                </ul>
+            </div>
+            <div class="caja">
+                <h2>Académicas</h2>
+                <ul>
+                    <li>Curso de framework VUE</li>
+                    <li>Curso de programación</li>
+                    <li>Congreso CoNaCIE</li>
+                </ul>
+            </div>
+        </div>
+        <img src="img/actividades.png" alt="Imagen de actividades extraescolares">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
